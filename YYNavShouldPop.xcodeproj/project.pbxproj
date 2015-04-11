@@ -10,36 +10,23 @@
 		3E7611CE1AD8C4B700B98832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611CD1AD8C4B700B98832 /* main.m */; };
 		3E7611D11AD8C4B700B98832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611D01AD8C4B700B98832 /* AppDelegate.m */; };
 		3E7611D41AD8C4B700B98832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611D31AD8C4B700B98832 /* ViewController.m */; };
-		3E7611D71AD8C4B700B98832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7611D51AD8C4B700B98832 /* Main.storyboard */; };
 		3E7611D91AD8C4B700B98832 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7611D81AD8C4B700B98832 /* Images.xcassets */; };
-		3E7611DC1AD8C4B700B98832 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7611DA1AD8C4B700B98832 /* LaunchScreen.xib */; };
-		3E7611E81AD8C4B700B98832 /* YYNavShouldPopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611E71AD8C4B700B98832 /* YYNavShouldPopTests.m */; };
+		3E7612001AD8CD7E00B98832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611D31AD8C4B700B98832 /* ViewController.m */; };
+		3E7612011AD8CD7E00B98832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611D01AD8C4B700B98832 /* AppDelegate.m */; };
+		3E7612021AD8CD7E00B98832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7611CD1AD8C4B700B98832 /* main.m */; };
+		3E7612051AD8CD7E00B98832 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7611D81AD8C4B700B98832 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3E7611E21AD8C4B700B98832 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E7611C01AD8C4B700B98832 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E7611C71AD8C4B700B98832;
-			remoteInfo = YYNavShouldPop;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		3E7611C81AD8C4B700B98832 /* YYNavShouldPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYNavShouldPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7611C81AD8C4B700B98832 /* InheritanceScheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InheritanceScheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7611CC1AD8C4B700B98832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E7611CD1AD8C4B700B98832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E7611CF1AD8C4B700B98832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E7611D01AD8C4B700B98832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E7611D21AD8C4B700B98832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3E7611D31AD8C4B700B98832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E7611D61AD8C4B700B98832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E7611D81AD8C4B700B98832 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3E7611DB1AD8C4B700B98832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3E7611E11AD8C4B700B98832 /* YYNavShouldPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYNavShouldPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E7611E61AD8C4B700B98832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E7611E71AD8C4B700B98832 /* YYNavShouldPopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYNavShouldPopTests.m; sourceTree = "<group>"; };
+		3E7612091AD8CD7E00B98832 /* YYNavShouldPop copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YYNavShouldPop copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +37,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E7611DE1AD8C4B700B98832 /* Frameworks */ = {
+		3E7612031AD8CD7E00B98832 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				3E7611CA1AD8C4B700B98832 /* YYNavShouldPop */,
-				3E7611E41AD8C4B700B98832 /* YYNavShouldPopTests */,
 				3E7611C91AD8C4B700B98832 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,8 +58,8 @@
 		3E7611C91AD8C4B700B98832 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E7611C81AD8C4B700B98832 /* YYNavShouldPop.app */,
-				3E7611E11AD8C4B700B98832 /* YYNavShouldPopTests.xctest */,
+				3E7611C81AD8C4B700B98832 /* InheritanceScheme.app */,
+				3E7612091AD8CD7E00B98832 /* YYNavShouldPop copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +71,7 @@
 				3E7611D01AD8C4B700B98832 /* AppDelegate.m */,
 				3E7611D21AD8C4B700B98832 /* ViewController.h */,
 				3E7611D31AD8C4B700B98832 /* ViewController.m */,
-				3E7611D51AD8C4B700B98832 /* Main.storyboard */,
 				3E7611D81AD8C4B700B98832 /* Images.xcassets */,
-				3E7611DA1AD8C4B700B98832 /* LaunchScreen.xib */,
 				3E7611CB1AD8C4B700B98832 /* Supporting Files */,
 			);
 			path = YYNavShouldPop;
@@ -102,29 +86,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3E7611E41AD8C4B700B98832 /* YYNavShouldPopTests */ = {
-			isa = PBXGroup;
-			children = (
-				3E7611E71AD8C4B700B98832 /* YYNavShouldPopTests.m */,
-				3E7611E51AD8C4B700B98832 /* Supporting Files */,
-			);
-			path = YYNavShouldPopTests;
-			sourceTree = "<group>";
-		};
-		3E7611E51AD8C4B700B98832 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E7611E61AD8C4B700B98832 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E7611C71AD8C4B700B98832 /* YYNavShouldPop */ = {
+		3E7611C71AD8C4B700B98832 /* InheritanceScheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E7611EB1AD8C4B700B98832 /* Build configuration list for PBXNativeTarget "YYNavShouldPop" */;
+			buildConfigurationList = 3E7611EB1AD8C4B700B98832 /* Build configuration list for PBXNativeTarget "InheritanceScheme" */;
 			buildPhases = (
 				3E7611C41AD8C4B700B98832 /* Sources */,
 				3E7611C51AD8C4B700B98832 /* Frameworks */,
@@ -134,28 +101,27 @@
 			);
 			dependencies = (
 			);
-			name = YYNavShouldPop;
+			name = InheritanceScheme;
 			productName = YYNavShouldPop;
-			productReference = 3E7611C81AD8C4B700B98832 /* YYNavShouldPop.app */;
+			productReference = 3E7611C81AD8C4B700B98832 /* InheritanceScheme.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E7611E01AD8C4B700B98832 /* YYNavShouldPopTests */ = {
+		3E7611FE1AD8CD7E00B98832 /* CategoryScheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E7611EE1AD8C4B700B98832 /* Build configuration list for PBXNativeTarget "YYNavShouldPopTests" */;
+			buildConfigurationList = 3E7612061AD8CD7E00B98832 /* Build configuration list for PBXNativeTarget "CategoryScheme" */;
 			buildPhases = (
-				3E7611DD1AD8C4B700B98832 /* Sources */,
-				3E7611DE1AD8C4B700B98832 /* Frameworks */,
-				3E7611DF1AD8C4B700B98832 /* Resources */,
+				3E7611FF1AD8CD7E00B98832 /* Sources */,
+				3E7612031AD8CD7E00B98832 /* Frameworks */,
+				3E7612041AD8CD7E00B98832 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3E7611E31AD8C4B700B98832 /* PBXTargetDependency */,
 			);
-			name = YYNavShouldPopTests;
-			productName = YYNavShouldPopTests;
-			productReference = 3E7611E11AD8C4B700B98832 /* YYNavShouldPopTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = CategoryScheme;
+			productName = YYNavShouldPop;
+			productReference = 3E7612091AD8CD7E00B98832 /* YYNavShouldPop copy.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,10 +134,6 @@
 				TargetAttributes = {
 					3E7611C71AD8C4B700B98832 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					3E7611E01AD8C4B700B98832 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 3E7611C71AD8C4B700B98832;
 					};
 				};
 			};
@@ -188,8 +150,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E7611C71AD8C4B700B98832 /* YYNavShouldPop */,
-				3E7611E01AD8C4B700B98832 /* YYNavShouldPopTests */,
+				3E7611C71AD8C4B700B98832 /* InheritanceScheme */,
+				3E7611FE1AD8CD7E00B98832 /* CategoryScheme */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +161,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7611D71AD8C4B700B98832 /* Main.storyboard in Resources */,
-				3E7611DC1AD8C4B700B98832 /* LaunchScreen.xib in Resources */,
 				3E7611D91AD8C4B700B98832 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E7611DF1AD8C4B700B98832 /* Resources */ = {
+		3E7612041AD8CD7E00B98832 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7612051AD8CD7E00B98832 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,42 +186,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E7611DD1AD8C4B700B98832 /* Sources */ = {
+		3E7611FF1AD8CD7E00B98832 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7611E81AD8C4B700B98832 /* YYNavShouldPopTests.m in Sources */,
+				3E7612001AD8CD7E00B98832 /* ViewController.m in Sources */,
+				3E7612011AD8CD7E00B98832 /* AppDelegate.m in Sources */,
+				3E7612021AD8CD7E00B98832 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3E7611E31AD8C4B700B98832 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E7611C71AD8C4B700B98832 /* YYNavShouldPop */;
-			targetProxy = 3E7611E21AD8C4B700B98832 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3E7611D51AD8C4B700B98832 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E7611D61AD8C4B700B98832 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3E7611DA1AD8C4B700B98832 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E7611DB1AD8C4B700B98832 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3E7611E91AD8C4B700B98832 /* Debug */ = {
@@ -343,8 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = YYNavShouldPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DINHERITANCE_SCHEME";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,43 +291,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = YYNavShouldPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DINHERITANCE_SCHEME";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		3E7611EF1AD8C4B700B98832 /* Debug */ = {
+		3E7612071AD8CD7E00B98832 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = YYNavShouldPopTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYNavShouldPop.app/YYNavShouldPop";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/YYNavShouldPop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DCATEGORY_SCHEME";
+				PRODUCT_NAME = "YYNavShouldPop copy";
 			};
 			name = Debug;
 		};
-		3E7611F01AD8C4B700B98832 /* Release */ = {
+		3E7612081AD8CD7E00B98832 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = YYNavShouldPopTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYNavShouldPop.app/YYNavShouldPop";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/YYNavShouldPop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DCATEGORY_SCHEME";
+				PRODUCT_NAME = "YYNavShouldPop copy";
 			};
 			name = Release;
 		};
@@ -405,21 +335,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E7611EB1AD8C4B700B98832 /* Build configuration list for PBXNativeTarget "YYNavShouldPop" */ = {
+		3E7611EB1AD8C4B700B98832 /* Build configuration list for PBXNativeTarget "InheritanceScheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E7611EC1AD8C4B700B98832 /* Debug */,
 				3E7611ED1AD8C4B700B98832 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3E7611EE1AD8C4B700B98832 /* Build configuration list for PBXNativeTarget "YYNavShouldPopTests" */ = {
+		3E7612061AD8CD7E00B98832 /* Build configuration list for PBXNativeTarget "CategoryScheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E7611EF1AD8C4B700B98832 /* Debug */,
-				3E7611F01AD8C4B700B98832 /* Release */,
+				3E7612071AD8CD7E00B98832 /* Debug */,
+				3E7612081AD8CD7E00B98832 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
