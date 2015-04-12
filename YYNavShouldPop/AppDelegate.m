@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "YYRootViewViewController.h"
+#import "YYNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    
-    
+    YYRootViewViewController *root = [[YYRootViewViewController alloc] init];
+    UINavigationController *nav = nil;
+#ifdef CATEGORY_SCHEME
+    nav = [[UINavigationController alloc] initWithRootViewController:root];
+#elif INHERITANCE_SCHEME
+    nav = [[YYNavigationController alloc] initWithRootViewController:root];
+#endif
+    self.window.rootViewController = nav;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
