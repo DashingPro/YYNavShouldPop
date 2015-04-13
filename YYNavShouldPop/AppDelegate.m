@@ -22,13 +22,15 @@
     
     YYRootViewViewController *root = [[YYRootViewViewController alloc] init];
     UINavigationController *nav = nil;
+    
 #ifdef CATEGORY_SCHEME
     nav = [[UINavigationController alloc] initWithRootViewController:root];
 #elif INHERITANCE_SCHEME
     nav = [[YYNavigationController alloc] initWithRootViewController:root];
 #endif
     self.window.rootViewController = nav;
-
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -37,33 +37,34 @@ static char *kSaveOriginDelegateKey;
     objc_setAssociatedObject(self, kSaveOriginDelegateKey, self.interactivePopGestureRecognizer.delegate, OBJC_ASSOCIATION_ASSIGN);
     NSLog(@"%@", self.interactivePopGestureRecognizer.delegate);
     self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
-    
 }
-
+/**
+ *  重载父类的方法
+ *  是否要pop
+ */
 - (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item
 {
     UIViewController *vc = self.topViewController;
     
-    if (item != vc.navigationItem) {
-        return [super navigationBar:navigationBar shouldPopItem:item];
+    if (item != vc.navigationItem) { // 这个条件成立的话，则是代码写的pop语句
+        // return [super navigationBar:navigationBar shouldPopItem:item];
+        return YES; // 本来应该像上一句一样返回默认实现的，但是如果返回NO，crash，所以直接返回YES。
     }
     
-    if ([vc conformsToProtocol:@protocol(YYNavigationControllerShouldPop)]) {
-        if ([(id<YYNavigationControllerShouldPop>)vc yy_navigationController:self shouldPopItemWhenBackBarButtonItemClick:item]) {
-            return [super navigationBar:navigationBar shouldPopItem:item];
-        }
-        else {
+    if ([vc conformsToProtocol:@protocol(YYNavigationControllerShouldPop)]) { // 看看vc有没有意愿
+        if (![(id<YYNavigationControllerShouldPop>)vc yy_navigationController:self shouldPopItemWhenBackBarButtonItemClick:item]) { // 返回NO,表示不希望pop
             return NO;
         }
-    } else {
-        return [super navigationBar:navigationBar shouldPopItem:item];
     }
+    // 否则返回默认实现
+    return [super navigationBar:navigationBar shouldPopItem:item];
+    
 }
+
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
     if (gestureRecognizer == self.interactivePopGestureRecognizer) {
-        
         UIViewController *vc = [self topViewController];
         if ([vc conformsToProtocol:@protocol(YYNavigationControllerShouldPop)]) {
             if (![(id<YYNavigationControllerShouldPop>)vc yy_navigationControllerShouldStartInteractivePopGestureRecognizer:self]) {
@@ -72,6 +73,24 @@ static char *kSaveOriginDelegateKey;
         }
         id<UIGestureRecognizerDelegate> originDelegate = objc_getAssociatedObject(self, kSaveOriginDelegateKey);
         return [originDelegate gestureRecognizerShouldBegin:gestureRecognizer];
+    }
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        id<UIGestureRecognizerDelegate> originDelegate = objc_getAssociatedObject(self, kSaveOriginDelegateKey);
+        return [originDelegate gestureRecognizer:gestureRecognizer shouldReceiveTouch:touch];
+    }
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        id<UIGestureRecognizerDelegate> originDelegate = objc_getAssociatedObject(self, kSaveOriginDelegateKey);
+        return [originDelegate gestureRecognizer:gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:otherGestureRecognizer];
     }
     return YES;
 }

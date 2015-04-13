@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  自定义的 NavigationController 主要是位了复写父类的方法
+ */
 @interface YYNavigationController : UINavigationController
 
 @end

@@ -36,9 +36,13 @@
 
 - (BOOL)yy_navigationController:(UINavigationController *)navigationController shouldPopItemWhenBackBarButtonItemClick:(UINavigationItem *)item
 {
+#if 1 // 如果条件为0 则可直接返回到root
     UIAlertView *al = [[UIAlertView alloc] initWithTitle:@"提示" message:@"您确认要放弃当前正在编辑的内容么？" delegate:self cancelButtonTitle:nil otherButtonTitles:@"留在此页", @"放弃编辑", nil];
     [al show];
     al.tag = 999;
+#else
+    [self.navigationController popToRootViewControllerAnimated:YES];
+#endif
     return NO;
 }
 
